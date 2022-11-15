@@ -64,12 +64,9 @@ a {
   transform: scale(0.9)
 }
 
-
-
 /* NAVBAR STYLING */
 .navbar {
-  height: 90px;
- 
+  height: 90px; 
 }
 
 .navbar .flex {
@@ -83,8 +80,6 @@ a {
 
 .navbar ul {
   display: flex;
-  /* justify-content: center; */
-  /* border: 2px solid black; */
 }
 
 .navbar a {
@@ -104,8 +99,7 @@ a {
 }
 
 .showcase .grid {
-  column-gap: 30px;;
- 
+  column-gap: 30px; 
 }
 
 .showcase-img img {
@@ -114,7 +108,8 @@ a {
   object-fit: cover;  
 }
 
-.title {
+.title,
+.h2-title {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 70px;
@@ -141,7 +136,7 @@ a {
   display: none;
 }
 
-/* STATS STYLING */
+/*  NUMBER STYLING */
 #numbers-panel {
   background-color: #2e758b;
   color: #fff;
@@ -169,6 +164,34 @@ a {
 #numbers-panel .entry div .num-text {
   font-size: small;
 }
+
+/* STYLING FOR THE MAIN SECTION */
+main {
+  height: 100vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#main-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  height: 180px;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+
+#main-div img {
+  width:100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#main-div .main-text {
+  font-size: large;
+}
+
+
 
 
 
@@ -266,6 +289,30 @@ a {
     font-size: medium;    
   }
 
+   /* Main section */
+  .h2-title {
+    text-align: center;
+  }
+
+  .h2-title,
+  .highlight {
+    font-size: 75px;
+  }
+
+  main {
+    margin-bottom: 10px;
+  }
+
+  #main-div img {
+    height: 100%;
+  }
+
+  
+
+  
+
+
+
 
 
 }
@@ -276,6 +323,7 @@ a {
     background-color: lightcyan;
   }
 
+  /* Navbar */
   .navbar {
     height: 110px;
   }
@@ -296,6 +344,7 @@ a {
     display: none;
   }
 
+  /* Social links */
   #socials {
     display: none;
   }
@@ -313,6 +362,37 @@ a {
     color: var(--secondary-color)
   }
 
+  /* Main section */
+  .h2-title,
+  .highlight {
+    font-size: 65px;
+  }
+
+  main {
+    height: auto;
+    margin-top: px;
+  }
+
+  #main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;   
+    padding-bottom: 10px;
+  }
+
+  #main-div img {
+    height:90%;
+  }
+
+ 
+
+
+
+
+
+
+ 
+
   
 }
 
@@ -327,7 +407,8 @@ a {
     }
     
     .title,
-    .highlight {
+    .highlight,
+    .h2-title {
       font-size: 40px;
     }
 
