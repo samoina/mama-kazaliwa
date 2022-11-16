@@ -201,7 +201,6 @@ main {
 }
 
 /* STYLING FOR THE ABOUT-US SECTION */
-
 #about-us {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,6 +208,10 @@ main {
   width: 100%;
   column-gap: 50px;
   padding: 30px 0 0 0; 
+}
+
+#about-us .h2-title {
+  margin-top: 5px;
 }
 
 #about-text {
@@ -248,7 +251,22 @@ main {
 }
 
 
+/* Get support section */
+#get-support {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin: 0 0 0 0; 
+}
 
+#get-support-text h2,
+#get-support-text .highlight {
+  font-size: 2.5rem;
+}
+
+#get-support-text h2 {
+  margin-top: 30px;
+}
 
 
 
@@ -371,6 +389,10 @@ main {
   height: auto;
 }
 
+#about-us .h2-title {
+  margin-top: 20px;
+}
+
 #about-us img { 
   height: 100%; 
 }
@@ -380,7 +402,15 @@ main {
   font-size: x-large;
 }
 
-  
+/* Get Support */
+#get-support {
+  grid-template-columns: 1fr;
+}
+
+#get-support img {
+  margin: 30px 0;
+}
+
 
   
 
