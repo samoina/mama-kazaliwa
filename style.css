@@ -205,7 +205,7 @@ main {
 #about-us {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: auto;
+  height: 100%;
   width: 100%;
   column-gap: 50px;
   padding: 30px 0 0 0; 
@@ -362,8 +362,23 @@ main {
   }
 
   #main-div img {
-    height: 100%;
+    height: 80%;
   }
+
+  /* About */
+#about-us {  
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+#about-us img { 
+  height: 100%; 
+}
+
+/* Facts */
+#facts #facts-stats {
+  font-size: x-large;
+}
 
   
 
@@ -468,6 +483,10 @@ main {
     .highlight,
     .h2-title {
       font-size: 40px;
+    }
+
+    #about-us img { 
+      display: none; 
     }
 
    
