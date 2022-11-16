@@ -451,7 +451,9 @@ footer #help {
     height: 100%;
   }
 
-  .showcase-text {
+  .showcase-text,
+  #about-text,
+  #get-support-text {
     text-align: center;
   }
 
