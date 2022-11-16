@@ -97,7 +97,8 @@ a {
 
 .navbar a:hover,
 #socials a:hover,
-#about-us a:hover {
+#about-us a:hover,
+footer a:hover {
   border-bottom: var(--primary-color) 2px solid;
 }
 
@@ -337,10 +338,72 @@ main {
   color: #fff;
 } 
 
+/* Footer section */
+.fa-instagram,
+.fa-envelope {
+  color: var(--primary-color); 
+}
 
+footer {
+  background-color: #053d4e;
+  color: var(--primary-color);
+  padding: 40px 20px 20px 40px;
+}
 
+footer a {
+  color: var(--primary-color);
+}
 
+#footer {
+  display: grid;
+  grid-template-columns: 31% 23% 23% 23%;  
+}
 
+#footer-mama-kazaliwa h2 {
+  font-size:larger;
+}
+
+#footer-mama-kazaliwa img {
+  width: 25%;
+} 
+
+#footer-socials,
+#footer-mama-kazaliwa {
+  color: var(--primary-color);
+}
+
+#footer-mama-kazaliwa h2,
+#footer-mama-kazaliwa #footer-socials,
+#footer-details {
+  padding-left: 30px;
+}
+
+#footer h4 {
+  padding-bottom: 10px;;
+}
+
+.fa-instagram {
+  padding-right: 20px;
+}
+
+footer #explore,
+footer #footer-about,
+footer #help {
+  line-height: 2;
+} 
+
+#footer-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  padding-top: 30px;
+}
+
+#footer-details-left {
+  display: flex;  
+  justify-content: space-between;
+  width: 400px;  
+}
 
 /* ANIMATION */
 @keyframes slideInFromLeft {
@@ -362,19 +425,6 @@ main {
     transform: translateX(0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* MEDIA QUERIES */
@@ -502,12 +552,28 @@ main {
   padding: 50px 20% 0
 }
 
+/* Footer */
+#footer {
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
 
+#footer-mama-kazaliwa {
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 50px;
+  column-gap: 100px;  
+}
 
+#footer-mama-kazaliwa h2,
+#footer-socials {
+  grid-column: 2 / span 3;
+}
 
-
-
-  
+#footer img {
+  width: 80%;
+}
 
 
 
@@ -590,6 +656,58 @@ main {
   #about-us .h2-title {
     margin-top: 0;
   }
+
+  /* Footer  */
+footer {
+  margin: 0 auto;
+}
+
+  #footer {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+  
+  #footer-mama-kazaliwa {
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    column-gap: 10px;  
+  }
+  
+  #footer-mama-kazaliwa h2,
+  #footer-socials {
+    grid-column: 2 / span 3;
+  }
+  
+  #footer img {
+    width: 80%;
+  }
+
+footer #explore p,
+footer #footer-about p,
+footer #help p {
+  font-size: medium;
+} 
+
+#footer-details {
+  flex-direction: column;  
+  height: 90px;
+}
+
+#footer-details-left {
+  margin-left: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer-details-right {
+  align-self: center;
+}
+
+  
+  
+  
 
  
 
