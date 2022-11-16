@@ -67,7 +67,7 @@ a {
 }
 
 .btn:hover {
-  transform: scale(0.9)
+  transform: scale(0.9);
 }
 
 /* NAVBAR STYLING */
@@ -128,7 +128,8 @@ a {
   text-transform: capitalize;
 }
 
-.showcase-text .btn {
+.showcase-text .btn,
+#get-support-text .btn {
   margin: 10px 0 10px 0;
 }
 
@@ -240,6 +241,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slideInFromRight 1s ease-in;
 }
 
 #facts-intro {
@@ -267,6 +269,75 @@ main {
 #get-support-text h2 {
   margin-top: 30px;
 }
+
+/* Reviews section */
+#review-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.review {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 100px;
+  max-width: 340px;
+  width: 100%;
+  background-color: #000;
+  color: var(--primary-color);
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0 , 0, 0.3);
+}
+.review img {
+  max-width: 100%;
+  opacity: 0.3;
+  vertical-align: top;
+}
+
+.review:hover {
+  opacity: 0.9;
+  transform: scale(0.95)
+}
+
+.review figcaption {
+  position:absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 10% 15%;
+}
+
+.review figcaption::before {
+  font-family: 'FontAwesome';
+  content: '\f10d';
+  font-size: 180px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0.3;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.review blockquote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.review h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 5px 0;
+  color: #fff;
+} 
+
+
 
 
 
@@ -324,6 +395,10 @@ main {
 
   .showcase {
     height: auto;
+  }
+
+  .showcase-img {
+    height: 100%;
   }
 
   .showcase-text {
@@ -408,8 +483,28 @@ main {
 }
 
 #get-support img {
-  margin: 30px 0;
+  margin-bottom: 30px;
+  order: -1;
 }
+
+#review-container {
+  flex-direction: column;
+  height: auto;
+}
+
+.review {
+  max-width: 100%;
+  height: 500px;  
+}
+
+.review figcaption {
+  top: 0;
+  padding: 50px 20% 0
+}
+
+
+
+
 
 
   
@@ -478,13 +573,22 @@ main {
 
   #main-div {
     display: grid;
-    grid-template-columns: 1fr;
-    height: auto;   
-    padding-bottom: 10px;
+    grid-template-columns: 1fr;  
+    height: fit-content;
+    padding-bottom: 0;
   }
 
-  #main-div img {
-    height:90%;
+  .main-div-child {
+    height: fit-content;
+    margin-bottom: 10px;;
+  }
+
+  #about-us img { 
+    display: none; 
+  }
+
+  #about-us .h2-title {
+    margin-top: 0;
   }
 
  
@@ -515,9 +619,7 @@ main {
       font-size: 40px;
     }
 
-    #about-us img { 
-      display: none; 
-    }
+   
 
    
 }
