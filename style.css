@@ -13,7 +13,7 @@
   margin: 0; 
   box-sizing: border-box;
 } 
-
+ 
 img {
   display: block;
   max-width: 100%;
@@ -99,6 +99,7 @@ a {
 #socials a:hover,
 #about-us a:hover,
 #about-mystory a:hover,
+#faqs a:hover,
 footer a:hover {
   border-bottom: var(--primary-color) 2px solid;
 }
@@ -111,12 +112,14 @@ footer a:hover {
 }
 
 .showcase .grid,
-.showcase-about .grid {
+.showcase-about .grid,
+.showcase-contact .grid {
   column-gap: 30px; 
 }
 
 .showcase-img img,
-.showcase-about-img img {
+.showcase-about-img img ,
+.showcase-contact-img img{
   width: 100%;
   height: 100%;
   object-fit: cover;  
@@ -210,10 +213,6 @@ main {
 }
 
 /* STYLING FOR THE MAIN SECTION in the ABOUT PAGE*/
-#about-main {
-  /* border: solid 2px black */
-}
-
 .community-project {  
   position: relative;
   
@@ -381,11 +380,71 @@ main {
   line-height: 24px;
   margin: 5px 0;
   color: #fff;
-} 
+}
+
+/* CONTACTS PAGE */
+.showcase-contact {
+  height: 100vh;
+  max-width: 100%;
+}
+
+.showcase-contact-text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#faqs .title {
+
+  /* border:solid 2px black; */
+  padding-top: 0;
+
+}
+
+/* CONTACT Form */
+
+form .hidden {
+  display: none;
+}
+
+#contact-form {
+  height: 500px;
+  width: 100%;
+  padding: 40px 40px 100px 40px;
+  animation: slideInFromRight 1s ease-in;
+}
+
+form .form-control {
+  margin: 30px 0;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'] {
+  border: 0;
+  border-bottom: solid 1px var(--secondary-color);
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+form input[type='text']:focus,
+form input[type='email'],
+form input[type='tel'] {
+  outline: none;
+}
+
+form .btn {
+  border: none;
+  width: 250px;
+}
+
 
 /* Footer section */
 .fa-instagram,
-.fa-envelope {
+.fa-envelope,
+.fa-chevron-down,
+.fa-facebook {
   color: var(--primary-color); 
 }
 
@@ -485,17 +544,20 @@ footer #help {
 
   .grid,
   .showcase .grid,
-  .showcase-about .grid{
+  .showcase-about .grid,
+  .showcase-contact .grid{
     grid-template-columns: 1fr;
   }
 
   .showcase,
-  .showcase-about {
+  .showcase-about,
+  .showcase-contact {
     height: auto;
   }
 
   .showcase-img,
-  .showcase-about-img {
+  .showcase-about-img,
+  .showcase-contact-img {
     height: 100%;
   }
 
@@ -507,7 +569,8 @@ footer #help {
   .showcase-about-text,
   #about-text,
   #about-mystory-text,
-  #get-support-text {
+  #get-support-text,
+  .showcase-contact-text {
     text-align: center;
   }
 
@@ -693,8 +756,13 @@ footer #help {
 
   /* Main section */
   .h2-title,
-  .highlight {
+  .highlight,
+  #contact-form .title {
     font-size: 65px;
+  }
+
+  #faqs .title  {
+    font-size: 50px;
   }
 
   main {
@@ -730,6 +798,15 @@ footer #help {
     bottom: 5px;
   }
 
+  .showcase-contact-img,
+  .showcase-contact-text .title{
+    margin-top: 20px;
+  }
+
+  /* Contact form */
+#contact-form {
+  padding-top: 0;
+}
 
   /* Footer  */
 footer {
