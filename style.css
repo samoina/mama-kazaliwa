@@ -9,7 +9,7 @@
 }
 
 * {  
-  padding: 0;
+  /* padding: 0  10px; */
   margin: 0; 
   box-sizing: border-box;
 } 
@@ -24,6 +24,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #333;  
+  max-width: 100vw;
 }
 
 ul {
@@ -469,6 +470,10 @@ form .btn {
   position:relative;
 }
 
+.mid-div {
+ column-gap:30px;
+}
+
 
 /* Footer section */
 .fa-instagram,
@@ -712,16 +717,25 @@ footer #help {
 
 /* Footer */
 #footer {
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
+  grid-template-columns: 1fr;
+  /* column-gap: 50px; */
 }
 
 #footer-mama-kazaliwa {
-  grid-column: 1 / span 3;
+  /* grid-column: 1 / span 3;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; */
   padding-bottom: 50px;
   column-gap: 100px;  
+}
+
+#footer-details {
+  flex-direction: column;
+}
+
+#footer-details-left {
+  flex-direction: column;
+  gap: 10px;;
 }
 
 #footer-mama-kazaliwa h2,
@@ -730,7 +744,11 @@ footer #help {
 }
 
 #footer img {
-  width: 80%;
+  width: 20%;
+}
+
+#footer-details .hidden {
+  display: none;
 }
 
 
@@ -904,6 +922,10 @@ footer #help p {
 
 /* Media Queries for small screens */
 @media (max-width: 420px) {
+  * {
+    line-height: 1;
+  }
+
     .hidden {
       display: none;
     }
