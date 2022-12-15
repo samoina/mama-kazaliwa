@@ -234,6 +234,12 @@ main {
   color: #fff;
 }
 
+.community-project a {
+  color: #fff;
+}
+
+
+
 /* STYLING FOR THE ABOUT-US SECTION */
 #about-us,
 #about-mystory {
@@ -470,7 +476,8 @@ form .btn {
   position:relative;
 }
 
-.mid-div {
+.mid-div,
+.period-project-text {
  column-gap:30px;
 }
 
