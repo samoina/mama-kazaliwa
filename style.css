@@ -582,7 +582,7 @@ footer #help {
   }
 
   .navbar img {
-    width: 15%;
+    width: 25%;
   }
 
   .grid,
@@ -667,8 +667,7 @@ footer #help {
     font-size: 75px;
   }
 
-  main,
-  #disclaimer-title {
+  main {
     margin-bottom: 10px;
   }
 
